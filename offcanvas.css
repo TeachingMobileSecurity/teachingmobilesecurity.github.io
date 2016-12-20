@@ -1,0 +1,38 @@
+
+
+/* Which top menu bar has been selected */
+.dkActive {
+  color: #fff;
+  background-color: #E3E3E3;
+}
+
+/* Define the attributes of the main page's body */
+.mainContent {
+
+  margin: 25px;
+  font-size: 14px;
+
+}
+
+/* Show the image information on the main page */
+
+.paragraph-image {
+  float: right; /* Toggle to be right and left */
+  clear: both;
+  padding: 10px;
+  min-width: 160px;
+  width: 50%;
+  max-width: 300px;
+}
+
+.paragraph-small-image {
+  min-width: 120px;
+  max-width: 220px;
+}
+
+
+/* Style the Activites Listing Table */
+.activities-table{
+
+
+}

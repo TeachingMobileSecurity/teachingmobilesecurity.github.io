@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+	
+
+</head><body>
+
+
+
+
+
+
+<div id="mainPage">
+<h1>Activities</h1>
+
+
+<p>
+The Teaching Mobile Security project is comprised of separate course modules which are designed to meet a wide range of experience levels ranging from new programmers, or seasoned mobile developers. In the following section, we will briefly detail each activity and a more thorough analysis may be found in the primary project <a href="https://github.com/dan7800/VulnerableAndroidAppOracle" target="_blank">repository</a>.
+</p>
+
+
+<h2>Beginner</h2>
+
+
+
+<!--
+<table class="activities-table">
+<tr>
+  <th>Activity</th>
+  <th>Description</th>
+  <th>Repo Link</th>
+  <th>Activity Description</th>
+</tr>
+
+
+<tr>
+  <td>Activities Access:</td>
+  <td width="50%"> Security issues arise when people try to access specific unauthorized activities. An example could be a bank app where users try to access a balance management activity without properly logging into the system.als;kfjasl; jf ;alsjf ajadsl;jas asljasdflkjfadslfal;fdsjadfs </td>
+  <td style="padding:50px;"><a href="XXXXXX" target="_blank">Repo</a></td>
+  <td><a href="XXXXXX" target="_blank">Documentation</a></td>
+</tr>
+</table>
+
+
+
+<br /><br /><br /><br /><br /><br />
+
+-->
+
+
+
+
+
+<p>These activities are designed for students just learning about mobile development or security.</p>
+
+
+
+<ul>
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/ActivitesAccess/Descriptions.docx" target="_blank">Activities Access:</a></b> Security issues arise when people try to access specific unauthorized activities. An example could be a bank app where users try to access a balance management activity without properly logging into the system. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/ActivitesAccess" target="_blank">Repo</a>]
+</li>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Intent/Descriptions.docx" target="_blank">Intent Protection:</a></b> Android uses "Intents" to pass data between apps, for examples between the Facebook and Facebook Messenger apps. Data passing between these apps may be easily (and improperly) read by other apps. This module explains how to protect information being sent via Intents between apps. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Intent" target="_blank">Repo</a>]
+</li>
+
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/XML/Descriptions.docx" target="_blank">XML:</a></b> XML is very easy to read using reverse engineering, it is best to avoid saving important information like Ads code or Map Code within XML files. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/XML" target="_blank">Repo</a>]
+</li>
+
+</ul>
+
+
+
+
+<h2>Medium</h2>
+
+<p>The following activities are designed for students and developers who have a reasonably fair amount of experience with mobile development. </p>
+
+
+
+<ul>
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/AndroidJavascript/Descriptions.docx" target="_blank">Android Javascript:</a></b> This demonstrates the negative implications of using JavaScript in Webview to pass data from an Android app to a server. This is considered bad practice because anyone could use malicious JavaScript code on their website to gain private user information associated with the app. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/AndroidJavascript" target="_blank">Repo</a>]</li>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Broadcast/Descriptions.docx" target="_blank">Broadcast:</a></b> Broadcast data sent by the app is easy to access from any other app in the system, so when Broadcasting to specific apps, the data should be encrypted. Intercepted unencrypted Broadcasts could lead to serious security and privacy issues. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Broadcast" target="_blank">Repo</a>]</li>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Data%20Storage/Descriptions.docx" target="_blank">Data Storage:</a></b> When an app does not secure storage data like data files, shared references, and databases (i.e. SQLite), it has the potential to be read by any other app. This means that important information stored in these files (such as a database connection information) should be encrypted. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Data%20Storage" target="_blank">Repo</a>]</li>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/DataOverHTTP/Descriptions.docx" target="_blank">DataOverHTTP:</a></b> Data that moves over an unencrypted HTTP (Internet) connection is vulnerable to “Man in the Middle” attacks. One example of this is credit card information, which if passed over an unsecured connection, could be intercepted midstream. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/DataOverHTTP" target="_blank">Repo</a>] </li>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Dos/Descriptions.docx" target="_blank">DOS:</a></b> Denial of Service (DoS) attacks are a common problem with Android, because a malicious party could create an overwhelming number of (HTTP) requests directed towards a specific server. The environments must be managed to make them less vulnerable to these types of attacks. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Dos" target="_blank">Repo</a>]</li> 
+
+</ul>
+
+
+
+
+
+
+
+<h2>Advanced</h2>
+
+<p>These activities are intended to challenge even the most seasoned Android developers.</p>
+
+<ul>
+
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/AdLibraries/Ad-Descriptions.docx" target="_blank">AdLibraries:</a></b> In-app advertisements (“Ads”) libraries are able to use all of the permissions given to the app which contains the Ads library, even the people who did not give this permission to the Ads library itself. This can open up various security and privacy issues within the app including Ad libraries collecting sensitive user information such as locations or contact info. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/AdLibraries" target="_blank">Repo</a>]
+
+<li><b><a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Content_Providers/Descriptions.docx" target="_blank">Content_Providers</a></b>: Content providers share data between apps, and any app in the system can access the "Content_Providers" database. Because of this, data stored here must be kept secure and encrypted so that it can only be read by an authorized app. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Content_Providers" target="_blank">Repo</a>]
+ </li>
+</li>
+
+</div>
+
+
+
+</body></html>

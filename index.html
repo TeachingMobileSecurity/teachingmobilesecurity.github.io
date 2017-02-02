@@ -65,23 +65,20 @@ var sPageURL = window.location.search.substring(1);
 }
 
 
-function loadPageData(strPageName){
-  switch(strPageName){
-
+function loadPageData(strPageName) {
+  switch(strPageName) {
 
     case "aboutproject":
-    $(document).ready(function(){
+      $(document).ready(function() {
         $('#content').load("pages/aboutproject.html"); 
       });
-      $(window).on('load', function(){
+      $(window).on('load', function() {
         $('#aboutProjectNavLink').addClass('dkActive');
       })
   break;
 
-
-
     case "activities":
-    $(document).ready(function(){
+      $(document).ready(function(){
         $('#content').load("pages/activities.html"); 
       });
       $(window).on('load', function(){
@@ -89,9 +86,8 @@ function loadPageData(strPageName){
       })
   break;
 
-
     case "sactutorial":
-    $(document).ready(function(){
+      $(document).ready(function(){
         $('#content').load("pages/SacTutorial.html"); 
       });
       $(window).on('load', function(){
@@ -99,49 +95,52 @@ function loadPageData(strPageName){
       })
   break;
 
-
-
     case "contribute":
-    $(document).ready(function(){
+      $(document).ready(function() {
         $('#content').load("pages/contribute.html"); 
       });
-      $(window).on('load', function(){
+      $(window).on('load', function() {
         $('#contributeNavLink').addClass('dkActive');
       })
   break;
 
 
-case "documentation":
-    $(document).ready(function(){
+    case "documentation":
+      $(document).ready(function() {
         $('#content').load("pages/documentation.html"); 
       });
-      $(window).on('load', function(){
+      $(window).on('load', function() {
         $('#documentationNavLink').addClass('dkActive');
       })
   break;
 
 
-case "funding":
-    $(document).ready(function(){
+    case "funding":
+      $(document).ready(function() {
         $('#content').load("pages/funding.html"); 
       });
-      $(window).on('load', function(){
+      $(window).on('load', function() {
         $('#fundingNavLink').addClass('dkActive');
       })
   break;
   
+    case "intentprotection":
+      $(document).ready(function() {
+        $('#content').load("pages/intentprotection.html");
+      });
+      $(window).on('load', function() {
+        //$('#intentNavLink').addClass('dkActive');
+      })
+  break;
   
-default:
-  $(document).ready(function(){
-      $('#content').load("pages/main.html"); 
-    });
-  $(window).on('load', function(){
+    default:
+      $(document).ready(function() {
+        $('#content').load("pages/main.html"); 
+      });
+      $(window).on('load', function() {
         $('#homeNavLink').addClass('dkActive');
       })
-}
-
-
-
+  }
 }
 
 
@@ -175,15 +174,9 @@ default:
     <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
   
-
-
-
-
        <li><a href="index.html?page=activities" id="activitiesNavLink" class="animate">Activities</a></li>
 
-
-  <li><a href="index.html?page=funding" id="fundingNavLink" class="animate">Funding</a></li>
-
+       <li><a href="index.html?page=funding" id="fundingNavLink" class="animate">Funding</a></li>
 
        <li><a href="index.html?page=contribute" id="contributeNavLink" class="animate">Contribute</a></li>
 <!--

@@ -8,10 +8,8 @@
 
 /* Define the attributes of the main page's body */
 .mainContent {
-
   margin: 25px;
   font-size: 14px;
-
 }
 
 /* Show the image information on the main page */
@@ -31,8 +29,8 @@
 }
 
 
-/* Style the Activites Listing Table */
-.activities-table{
+/* Style the Activities Listing Table */
+.activities-table {
 
 
 }

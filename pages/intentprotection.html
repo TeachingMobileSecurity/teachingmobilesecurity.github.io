@@ -12,30 +12,48 @@
 <div id="mainPage">
 <h1>Intent Protection</h1>
 
-
 <p>
-The Teaching Mobile Security project is comprised of separate course modules, which are designed to meet a wide range of experience levels ranging from new programmers, to seasoned mobile developers. In the following section, we will briefly detail each activity. A more thorough analysis may be found in the primary project <a href="https://github.com/dan7800/VulnerableAndroidAppOracle" target="_blank">repository</a>.
+Here is the collection of teaching materials related to Intent Protection.
 </p>
 
-
+<!-- TODO: Please update this introduction to explain things a bit better. It's sad. -->
 <h2>Introduction</h2>
 
 <p>
-In Android, we can send data between apps quite easily. For example, when we want to share images on Facebook from a local app, we send the image to the Facebook app over the bundle. Then, the Facebook app reads the image data and posts it.
+In Android, we have Intents, which are messaging objects used to request something from another app component. App components can be thought of as the basic parts of an Android app. An example of an app component is an Activity.
+</p>
+
+<p>
+Intents can also be used to deliver needed information to the app component being asked to do something. 
 </p>
 
 <p>
 The problem is that sending data between apps can be insecure in Android. For example, Android will automatically export an Activity for other apps to use if certain requirements are met. See: the Android Developer Guide for more information on this.<sup><a href="#fn1" id="ref1">1</a></sup>
 </p>
 
+<!--
+<h2>Slides</h2>
+TODO: Create slides
+-->
+
 <h2>Activity</h2>
-[<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Intent" target="_blank">Repo</a>]
+<p>Download the activity <a href="https://github.com/dan7800/VulnerableAndroidAppOracle/raw/master/Vulnerabilities/Intent/Descriptions.docx" target="_blank">here</a>.</p>
+
+<p>To see the revision history and the example source code for the project, see the
+<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Intent" target="_blank">repository</a>.</p>
 
 <h2>More Resources</h2>
-<ol type="1">
-	<li><sup id="fn1">[<a href="https://developer.android.com/guide/components/intents-filters.html" target="_blank">Android Developer Guide</a>]<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup></li>
-	<li><sup id="fn2">[<a href="https://guardianproject.info/2014/01/21/improving-trust-and-flexibility-in-interactions-between-android-apps/" target="_blank">Improving Trust and Flexibility in Interactions Between Android Apps</a>]<a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup></li>
-</ol>
+<sup id="fn1">1. [<a href="https://developer.android.com/guide/components/intents-filters.html" target="_blank">Android Developer Guide</a>]<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+<br>
+<sup id="fn2">2. [<a href="https://guardianproject.info/2014/01/21/improving-trust-and-flexibility-in-interactions-between-android-apps/" target="_blank">Improving Trust and Flexibility in Interactions Between Android Apps</a>]<a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup>
+
+<!--
+<h2>Films</h2>
+TODO: Create videos
+	- Walkthrough of the activity
+	- Teaching the slides
+Learn how to embed the videos!
+-->
 
 </div>
 

@@ -133,6 +133,15 @@ function loadPageData(strPageName) {
       })
   break;
   
+    case "datastorage":
+      $(document).ready(function() {
+        $('#content').load("pages/datastorage.html");
+      });
+      $(window).on('load', function() {
+        //$('#intentNavLink').addClass('dkActive');
+      })
+  break;
+
     default:
       $(document).ready(function() {
         $('#content').load("pages/main.html"); 

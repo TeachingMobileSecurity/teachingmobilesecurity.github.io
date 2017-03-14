@@ -68,6 +68,17 @@ var sPageURL = window.location.search.substring(1);
 function loadPageData(strPageName) {
   switch(strPageName) {
 
+
+    case "nycwic":
+      $(document).ready(function(){
+        $('#content').load("workshops/NYCWIC2017.html"); 
+      });
+//      $(window).on('load', function(){
+  //      $('#activitiesNavLink').addClass('dkActive');
+   //   })
+  break;
+
+
     case "aboutproject":
       $(document).ready(function() {
         $('#content').load("pages/aboutproject.html"); 

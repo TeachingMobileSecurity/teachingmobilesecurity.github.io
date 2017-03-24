@@ -156,6 +156,12 @@ function loadPageData(strPageName) {
       });
   break;
 
+    case "activitiesaccess":
+      $(document).ready(function() {
+        $('#content').load("pages/activitiesaccess.html");
+      });
+  break;
+
     default:
       $(document).ready(function() {
         $('#content').load("pages/main.html"); 

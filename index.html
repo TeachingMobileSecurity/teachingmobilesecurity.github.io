@@ -162,6 +162,12 @@ function loadPageData(strPageName) {
       });
   break;
 
+    case "xml":
+      $(document).ready(function() {
+        $('#content').load("pages/xml.html");
+      });
+  break;
+
     default:
       $(document).ready(function() {
         $('#content').load("pages/main.html"); 

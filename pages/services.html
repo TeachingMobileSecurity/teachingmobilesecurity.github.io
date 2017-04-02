@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+</head><body>
+
+
+<p id="mainPage">
+    <h1>Services</h1>
+
+
+    <h3>Introduction</h3>
+
+    <p>
+        A Service is an application component that allows you to run long running operations in the background.
+        This ensures that users can interact with another app and not have this service interrupt them.
+        Another application component can bind to a service to interact with it.
+        <br/>
+        A service runs in its host process and does not create a thread of its own unless specified.
+        Thus, if a service exposes a blocking operation or is expected to recieve multiple simultaneous requests
+        it must be run in a separate thread.
+
+        <p>
+            You most likely have a service in action when you have one or more of these running in the background:
+            <ul>
+                <li>A file download</li>
+                <li>An MP3 player playing your favourite song</li>
+                <li>Writing to a database through a content provider</li>
+            </ul>
+        </p>
+
+
+    <hr>
+        Services in Android could be one of three types:
+        <ul>
+            <li><strong>Scheduled</strong> These can be scheduled using the JobScheduler API introduced with Android 5.0. The API has methods to
+            maintain a queue to which services are added. These are then scheduled, by the system, based on the resource (network and time) requirements specified.</li>
+            <li><strong>Started</strong></li> A service that is started by an application component, most likely an Activity within the same app. These services essentially
+            perform just one background operation and do not generally return a result back to the calling Activity. These services need to stopped once they have finished the
+            intended operation
+            <li><strong>Bound</strong></li> A bound service offers a client-server interface for other application components to talk to it.
+            It runs as long as a component is bound to it and is stopped when unbound.
+        </ul>
+    </p>
+
+
+
+    <p>
+        The security risk here is that apps that are not authorized to communicate with a service may be able to do so if the service hasn't been configured appropriately.
+        An dangerous app could exploit a vulnerable service by obtaining it's package information. This information could be used to construct an explicit intent to bind to this service.
+    </p>
+
+    <h3>Slides</h3>
+    <p>Download the slides <a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Services/Services_Android.pptx" target="_blank">here</a>.</p>
+
+    <!--TODO: Fix links to the repo    -->
+    <h3>Description</h3>
+    <p>A step-by step tutorial to building a vulnerable service <a href="https://github.com/dan7800/VulnerableAndroidAppOracle/blob/master/Vulnerabilities/Services/VulnerableServices_Description.docx">here</a> and fixing it <a href="#">here</a></p>
+
+    <!--TODO: Fix links to the repo    -->
+    <h3>See the revision history and some example source code for the project</h3>
+    <p>See how an improperly configured service leads to unauthorized access. See an example here <a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Services/VulnerableServicesExample" target="_blank">here</a>.</p>
+    <p>Understand how to build bound services the right way. See an example <a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Services/SecureServicesExample" target="_blank">here</a>.</p>
+
+    <!--<h3>Films</h3>
+    <h4>Presentation on Services</h4>
+    <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+    <h4>Walkthrough of the Vulnerable Services Activity</h4>
+    <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>-->
+
+    <h3>More Resources</h3>
+    <ol>
+        <li><a href="https://developer.android.com/guide/components/services.html">Android Developer Guide to Build Services</a></li>
+        <li><a href="https://developer.android.com/guide/components/bound-services.html" target="_blank">Bound Services</a</li>
+        <li><a href="https://developer.android.com/training/articles/security-tips.html#IPC" target="_blank">Security Tips</a></li>
+    </ol>
+
+</div>
+
+
+
+</body></html>

@@ -168,6 +168,12 @@ function loadPageData(strPageName) {
       });
   break;
 
+      case "services":
+          $(document).ready(function() {
+              $('#content').load("pages/services.html");
+          });
+  break;
+
     default:
       $(document).ready(function() {
         $('#content').load("pages/main.html"); 

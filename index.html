@@ -186,6 +186,24 @@ function loadPageData(strPageName) {
       });
   break;
 
+    case "androidjavascript":
+      $(document).ready(function() {
+        $('#content').load("pages/androidjavascript.html");
+      });
+    break;
+
+    case "adlibraries":
+      $(document).ready(function() {
+        $('#content').load("pages/adlibraries.html");
+      });
+    break;
+
+    case "contentproviders":
+      $(document).ready(function() {
+        $('#content').load("pages/adlibraries.html");
+      });
+    break;
+
     default:
       $(document).ready(function() {
         $('#content').load("pages/main.html"); 

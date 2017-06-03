@@ -67,7 +67,17 @@ var sPageURL = window.location.search.substring(1);
 
 function loadPageData(strPageName) {
   switch(strPageName) {
-    case "nycwic":
+    case "seed":
+      $(document).ready(function() {
+        $('#content').load("pages/seed.html"); 
+      });
+//      $(window).on('load', function(){
+  //      $('#activitiesNavLink').addClass('dkActive');
+   //   })
+  break;
+          
+          
+              case "nycwic":
       $(document).ready(function() {
         $('#content').load("pages/NYCWIC2017.html"); 
       });
@@ -75,6 +85,8 @@ function loadPageData(strPageName) {
   //      $('#activitiesNavLink').addClass('dkActive');
    //   })
   break;
+
+          
 
     case "aboutproject":
       $(document).ready(function() {

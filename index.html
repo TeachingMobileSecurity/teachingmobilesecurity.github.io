@@ -77,6 +77,18 @@ function loadPageData(strPageName) {
   break;
           
           
+          function loadPageData(strPageName) {
+  switch(strPageName) {
+    case "tub":
+      $(document).ready(function() {
+        $('#content').load("pages/tub.html"); 
+      });
+//      $(window).on('load', function(){
+  //      $('#activitiesNavLink').addClass('dkActive');
+   //   })
+  break;
+          
+          
               case "nycwic":
       $(document).ready(function() {
         $('#content').load("pages/NYCWIC2017.html"); 

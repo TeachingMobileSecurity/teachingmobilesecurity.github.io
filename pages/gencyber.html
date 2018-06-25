@@ -15,15 +15,13 @@ body {
 
 <center>
 <table border ="0"  width="80%">
-<tr><td><img src="images/tiger_walking_rit_color.jpg" style="width:128px;height:128px;" alt="RIT Logo"></img></td><td><h1>Mobile Security Workshop</h1></td><td><img src="images/TUBerlin.png" style="width:128px;height:128px;" alt="TUBerlin Logo"></td></tr>
+<tr><td><img src="images/gencyberlogo.png" style="width:128px;height:128px;" alt="GenCyber Logo"></img></td><td><h1>GenCyber Program at RIT</h1></td><td><img src="images/nsa" style="width:128px;height:128px;" alt="NSA Logo"></td></tr>
 </table>
 </center>
 
 
-
-
-<h2>Welcome - GenCyber</h2>
-<p>This site contains information for the Practical LAbs in Security for Mobile Applications (PLASMA) Workshop being held at <a href="http://www.tu-berlin.de/menue/home/" target="_blank">TU Berlin</a>.  All related activities may be found at: <a href="http://www.TeachingMobileSecurity.com" target="_blank">http://www.TeachingMobileSecurity.com</a>
+<h2>Welcome GenCyber Students</h2>
+<p>This site contains information for the Practical LAbs in Security for Mobile Applications (PLASMA) Workshop  for the GenCyber program.
 </p>
 
 	
@@ -35,57 +33,53 @@ body {
 
 
 
-<h4>June 29</h4>
-	<ol>
-
-		<li><a href="https://teachingmobilesecurity.github.io/index.html?page=adlibraries" target="_blank">Properly Using External Libraries</a></li>
-
-		<li><a href="https://teachingmobilesecurity.github.io/index.html?page=androidjavascript" target="_blank">Android, Javascript and Webview</a></li>
-		<li><a href="https://teachingmobilesecurity.github.io/index.html?page=xml" target="_blank">Secure XML Storage</a></li>
-
-	</ol>
 
 
+		<h2>Activities</h2>
+
+			
+
+<ol>
+
+	<li><b><a href="index.html?page=PrivateInfo">Protecting Private Info:</a></b> You share a lot of data with the software that you use every day. However, do you ever think about this information that you are sharing? In this basic activity, particpants will be shown how easy it is for "sensative" information to be shared with tothers. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/PrivateInfo" target="_blank">Repo</a>]
+	</li>
+				
+	<li><b><a href="index.html?page=activitiesaccess">Activities Access:</a></b> Security issues arise when people try to access specific unauthorized activities. An example could be a bank app where users try to access a balance management activity without properly logging into the system. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/ActivitiesAccess" target="_blank">Repo</a>]
+	</li>
 
 
-<h4>June 30</h4>
-
-	<ol>
-		<li><a href="https://teachingmobilesecurity.github.io/index.html?page=datastorage" target="_blank">Secure Data Storage</a></li>
-		<li><a href="https://teachingmobilesecurity.github.io/index.html?page=dataoverhttp" target="_blank">Secure data transmission</a> (Will require <a href="https://www.wireshark.org/download.html" target="_blank">Wireshark</a>).</li>
-		<li><a href="https://milk-modules.github.io/activities/ColorBlind/index.html" target="_blank">Color blindness (Accessability)</a></li>
-
-	</ol>
+<!--
+<li><b><a href="index.html?page=intentprotection">Intent Protection:</a></b> Android uses "Intents" to pass data between apps, for examples between the Facebook and Facebook Messenger apps. Data passing between these apps may be easily (and improperly) read by other apps. This module explains how to protect information being sent via Intents between apps. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Intent" target="_blank">Repo</a>]
+</li>
+-->
 
 
-	No security or Android experience is necessary. The workshop will be held in room: MAR0.001
+	<li><b><a href="index.html?page=xml" target="_blank">XML:</a></b> XML is very easy to read using reverse engineering. As a result, it is best to avoid saving important information, like Ads code or Map Code within XML files. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/XML" target="_blank">Repo</a>]
+	</li>
 
-</p>
+	<li><b><a href="index.html?page=permissions" target="_blank">Proper Permissions Usage:</a></b> As a user and a developer, you need to be careful about the permissions your apps use. This activity will provide an understanding of proper permissions usage from both the perspective of the end user and of the developer. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Permissions" target="_blank">Repo</a>]
+	</li>
 
 
-<h3>Workshop Requirements</h3>
-
-<p>
-	While participants are not required to have any prior mobile/security experience, they should be sure to do the following BEFORE the workshop:
-
-	<ol>
-	
-		<li><b>Bring their your laptop</b>: Unfortunately, due to the number of participants we are unable to provide computers to everyone, so please bring your own.</li>
-		
-		<li><b>Install Android Studio</b>: Please be sure to install the latest version of Android studio on your laptop <i>before</i> attending the workshop. You may find details on installing Android Studio <a href="https://developer.android.com/studio/install.html" target="_blank">here</a>.</li>
-
-		<li><b>Build a Simple App</b>: In order to both ensure that you properly have Android studio setup and configured, and to introduce you to Android, it is useful (but not required) to practice building your <a href="https://developer.android.com/training/basics/firstapp/index.html" target="_blank">first Android app</a>.</li>
-
-		<li><b>Install Wireshark</b>: We will be using <a href="https://www.wireshark.org/download.html" target="_blank">Wireshark</a> for one fo the activities, so please be sure to install it.</li>
+  <li><b><a href="index.html?page=androidjavascript" target="_blank">Secure Webviews:</a></b> This demonstrates the negative implications of using JavaScript in Webview to pass data from an Android app to a server. This is considered bad practice because anyone could use malicious JavaScript code on their website to gain private user information associated with the app. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/AndroidJavascript" target="_blank">Repo</a>]</li>
 
 
 
+	<li><b><a href="index.html?page=datastorage" target="_blank">Data Storage:</a></b> When an app does not secure stored data, like data files, shared references, and databases (i.e. SQLite), it has the potential to be read by any other app. This means that important information stored in these files (such as database connection information) should be encrypted. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Data%20Storage" target="_blank">Repo</a>]</li>
 
-		<!--
-		<li><b>XXXX</b>: XXXX</li>
-		-->
 
-	</ol>
+	<li><b><a href="index.html?page=dataoverhttp" target="_blank">Data Over HTTP:</a></b> Data that moves over an unencrypted HTTP (Internet) connection is vulnerable to “Man in the Middle” attacks. One example of this is credit card information, which could be intercepted midstream, if sent over an unsecured connection. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/DataOverHTTP" target="_blank">Repo</a>]</li>
+
+
+
+	<li><b><a href="index.html?page=adlibraries" target="_blank">Ad Libraries:</a></b> In-app advertisements (“Ads”) libraries are able to use all of the permissions given to the app containing the Ads library. This is true as well for those who did not give these permissions to the Ads library itself. This can lead to various security and privacy issues within the app, including Ad libraries collecting sensitive user information such as locations or contact info. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/AdLibraries" target="_blank">Repo</a>]</li>
+
+	<li><b><a href="index.html?page=contentproviders" target="_blank">Content Providers</a></b>: Content providers share data between apps, and any app in the system can access the "Content_Providers" database. Because of this, data stored here must be kept secure and encrypted, so that it can only be read by an authorized app. [<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/Content_Providers" target="_blank">Repo</a>]</li>
+
+	<li><b><!--<a href="index.html?page=contentproviders" target="_blank">Content Providers</a>-->App Reverse Engineering:</b> Android apps are fairly easy to reverse engineer and modify. In this example, we will reverse engineer a basic Android application and demonstrate exploitations that could be performed on the app. <!--[<a href="https://github.com/dan7800/VulnerableAndroidAppOracle/tree/master/Vulnerabilities/XXXXX" target="_blank">Repo</a>]--></li>
+
+
+</ul>
 
 
 </p>
@@ -98,7 +92,7 @@ For a full list of activities, click <a href="index.html?page=activities" target
 The workshop slides are available <a href="https://docs.google.com/presentation/d/1MtiQp0NxewaoMFppXk-jYtHtg6WPFT41MMF4vRTUpJI/edit?usp=sharing" target="_blank">here</a>
 </p>
 -->
-</ul>
+</ol>
 
 </p>
 

@@ -190,6 +190,12 @@ function loadPageData(strPageName) {
       });
   break;
           
+ case "permissions":
+      $(document).ready(function() {
+        $('#content').load("pages/permissions.html");
+      });
+  break;
+          
  case "PrivateInfo":
       $(document).ready(function() {
         $('#content').load("pages/privacy.html");

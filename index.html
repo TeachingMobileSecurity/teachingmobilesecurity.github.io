@@ -90,6 +90,13 @@ function loadPageData(strPageName) {
       });
       break;
 
+
+  case "securityHistory":
+      $(document).ready(function() {
+        $('#content').load("pages/securityHistory.html"); 
+      });
+      break;
+
   case "SecureAppProject":
       $(document).ready(function() {
         $('#content').load("pages/SecureAppProject.html"); 
